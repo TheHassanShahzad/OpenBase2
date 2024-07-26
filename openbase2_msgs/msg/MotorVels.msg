@@ -1,0 +1,2 @@
+int16 right_pwm
+int16 left_pwm

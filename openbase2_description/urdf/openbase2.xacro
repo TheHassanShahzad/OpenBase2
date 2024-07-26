@@ -1,0 +1,48 @@
+<robot name="openbase2">
+  <!-- Base Footprint -->
+  <link name="base_footprint"/>
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <!-- Visual -->
+    <visual>
+      <origin xyz="0.13 0 0.03" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://openbase2_description/meshes/base_link_visual.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <!-- Collision -->
+    <collision>
+      <origin xyz="0.13 0 0.03" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://openbase2_description/meshes/base_link_collision.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Laser Frame -->
+  <!-- <link name="laser_frame"/> -->
+
+  <!-- IMU Frame -->
+  <!-- <link name="imu_frame"/> -->
+
+  <!-- Joints -->
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.0793765" rpy="0 0 0"/>
+  </joint>
+
+  <!-- <joint name="base_link_to_laser_frame" type="fixed">
+    <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_link_to_imu_frame" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_frame"/>
+    <origin xyz="0.1 0 0" rpy="0 0 0"/>
+  </joint> -->
+</robot>
