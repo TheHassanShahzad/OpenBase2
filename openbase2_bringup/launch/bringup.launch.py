@@ -28,9 +28,12 @@ def generate_launch_description():
             output='screen'
         ),
         
-        # Launch rs_launch.py with pointcloud enabled from realsense2_camera
+        # Launch rs_launch.py with specified parameters from realsense2_camera
         ExecuteProcess(
-            cmd=['ros2', 'launch', 'realsense2_camera', 'rs_launch.py', 'pointcloud.enable:=true'],
+            cmd=['ros2', 'launch', 'realsense2_camera', 'rs_launch.py', 
+                 'depth_module.depth_profile:=480x270x6', 
+                 'pointcloud.enable:=true', 
+                 'rgb_camera.color_profile:=640x360x15'],
             output='screen'
         ),
     ])
