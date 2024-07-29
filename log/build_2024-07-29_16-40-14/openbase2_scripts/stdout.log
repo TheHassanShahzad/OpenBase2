@@ -1,0 +1,43 @@
+running egg_info
+creating ../build/openbase2_scripts/openbase2_scripts.egg-info
+writing ../build/openbase2_scripts/openbase2_scripts.egg-info/PKG-INFO
+writing dependency_links to ../build/openbase2_scripts/openbase2_scripts.egg-info/dependency_links.txt
+writing entry points to ../build/openbase2_scripts/openbase2_scripts.egg-info/entry_points.txt
+writing requirements to ../build/openbase2_scripts/openbase2_scripts.egg-info/requires.txt
+writing top-level names to ../build/openbase2_scripts/openbase2_scripts.egg-info/top_level.txt
+writing manifest file '../build/openbase2_scripts/openbase2_scripts.egg-info/SOURCES.txt'
+reading manifest file '../build/openbase2_scripts/openbase2_scripts.egg-info/SOURCES.txt'
+writing manifest file '../build/openbase2_scripts/openbase2_scripts.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+copying openbase2_scripts/odom_node.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+copying openbase2_scripts/diff_drive.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+copying openbase2_scripts/__init__.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+copying openbase2_scripts/hardware_driver.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+running install
+running install_lib
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/odom_node.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/diff_drive.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/__init__.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/hardware_driver.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/odom_node.py to odom_node.cpython-310.pyc
+byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/diff_drive.py to diff_drive.cpython-310.pyc
+byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/hardware_driver.py to hardware_driver.cpython-310.pyc
+running install_data
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index/resource_index
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index/resource_index/packages
+copying resource/openbase2_scripts -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index/resource_index/packages
+copying package.xml -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/openbase2_scripts
+running install_egg_info
+Copying ../build/openbase2_scripts/openbase2_scripts.egg-info to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts-0.0.0-py3.10.egg-info
+running install_scripts
+Installing diff_drive_node script to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/openbase2_scripts
+Installing hardware_driver script to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/openbase2_scripts
+Installing odom_node script to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/openbase2_scripts
+writing list of installed files to '/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/install.log'

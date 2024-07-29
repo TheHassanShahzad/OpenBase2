@@ -27,6 +27,9 @@
   <!-- IMU Frame -->
   <!-- <link name="imu_frame"/> -->
 
+  <link name="camera_link"/>
+
+
   <!-- Joints -->
   <joint name="base_footprint_to_base_link" type="fixed">
     <parent link="base_footprint"/>
@@ -45,4 +48,11 @@
     <child link="imu_frame"/>
     <origin xyz="0.1 0 0" rpy="0 0 0"/>
   </joint> -->
+
+  <joint name="base_link_to_camera_link" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.32 0 0.0555" rpy="0 0 0"/>
+  </joint>
+
 </robot>

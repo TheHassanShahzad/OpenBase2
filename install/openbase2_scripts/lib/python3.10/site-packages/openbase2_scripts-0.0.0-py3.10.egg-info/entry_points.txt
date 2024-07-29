@@ -1,0 +1,5 @@
+[console_scripts]
+diff_drive_node = openbase2_scripts.diff_drive:main
+hardware_driver = openbase2_scripts.hardware_driver:main
+odom_node = openbase2_scripts.odom_node:main
+

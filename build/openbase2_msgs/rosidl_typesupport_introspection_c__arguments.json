@@ -1,0 +1,21 @@
+{
+  "package_name": "openbase2_msgs",
+  "output_dir": "/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_msgs/rosidl_typesupport_introspection_c/openbase2_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_msgs/rosidl_adapter/openbase2_msgs:msg/MotorVels.idl",
+    "/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_msgs/rosidl_adapter/openbase2_msgs:msg/EncoderData.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_msgs/rosidl_adapter/openbase2_msgs/msg/MotorVels.idl",
+    "/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_msgs/rosidl_adapter/openbase2_msgs/msg/EncoderData.idl"
+  ]
+}

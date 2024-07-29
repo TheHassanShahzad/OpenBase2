@@ -1,0 +1,20 @@
+[0.739s] Invoking command in '/home/the-hassan-shahzad/ros2_ws/src/openbase2/openbase2_bringup': PYTHONPATH=/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/prefix_override:/home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/openbase2_bringup build --build-base /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build install --record /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/install.log --single-version-externally-managed install_data
+[0.925s] running egg_info
+[0.925s] writing ../build/openbase2_bringup/openbase2_bringup.egg-info/PKG-INFO
+[0.925s] writing dependency_links to ../build/openbase2_bringup/openbase2_bringup.egg-info/dependency_links.txt
+[0.925s] writing entry points to ../build/openbase2_bringup/openbase2_bringup.egg-info/entry_points.txt
+[0.925s] writing requirements to ../build/openbase2_bringup/openbase2_bringup.egg-info/requires.txt
+[0.925s] writing top-level names to ../build/openbase2_bringup/openbase2_bringup.egg-info/top_level.txt
+[0.926s] reading manifest file '../build/openbase2_bringup/openbase2_bringup.egg-info/SOURCES.txt'
+[0.927s] writing manifest file '../build/openbase2_bringup/openbase2_bringup.egg-info/SOURCES.txt'
+[0.927s] running build
+[0.927s] running build_py
+[0.927s] running install
+[0.927s] running install_lib
+[0.928s] running install_data
+[0.928s] running install_egg_info
+[0.929s] removing '/home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages/openbase2_bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[0.929s] Copying ../build/openbase2_bringup/openbase2_bringup.egg-info to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages/openbase2_bringup-0.0.0-py3.10.egg-info
+[0.930s] running install_scripts
+[0.944s] writing list of installed files to '/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/install.log'
+[0.961s] Invoked command in '/home/the-hassan-shahzad/ros2_ws/src/openbase2/openbase2_bringup' returned '0': PYTHONPATH=/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/prefix_override:/home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/openbase2_bringup build --build-base /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build install --record /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/install.log --single-version-externally-managed install_data

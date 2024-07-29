@@ -27,4 +27,10 @@ def generate_launch_description():
             cmd=['ros2', 'run', 'openbase2_scripts', 'diff_drive_node'],
             output='screen'
         ),
+        
+        # Launch rs_launch.py with pointcloud enabled from realsense2_camera
+        ExecuteProcess(
+            cmd=['ros2', 'launch', 'realsense2_camera', 'rs_launch.py', 'pointcloud.enable:=true'],
+            output='screen'
+        ),
     ])

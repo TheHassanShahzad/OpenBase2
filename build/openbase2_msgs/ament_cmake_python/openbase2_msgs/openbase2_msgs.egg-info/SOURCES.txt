@@ -1,0 +1,9 @@
+setup.py
+openbase2_msgs/__init__.py
+openbase2_msgs.egg-info/PKG-INFO
+openbase2_msgs.egg-info/SOURCES.txt
+openbase2_msgs.egg-info/dependency_links.txt
+openbase2_msgs.egg-info/top_level.txt
+openbase2_msgs/msg/__init__.py
+openbase2_msgs/msg/_encoder_data.py
+openbase2_msgs/msg/_motor_vels.py

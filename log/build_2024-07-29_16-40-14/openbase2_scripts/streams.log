@@ -1,0 +1,45 @@
+[0.727s] Invoking command in '/home/the-hassan-shahzad/ros2_ws/src/openbase2/openbase2_scripts': PYTHONPATH=/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/prefix_override:/home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/openbase2_scripts build --build-base /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build install --record /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/install.log --single-version-externally-managed install_data
+[0.917s] running egg_info
+[0.917s] creating ../build/openbase2_scripts/openbase2_scripts.egg-info
+[0.917s] writing ../build/openbase2_scripts/openbase2_scripts.egg-info/PKG-INFO
+[0.917s] writing dependency_links to ../build/openbase2_scripts/openbase2_scripts.egg-info/dependency_links.txt
+[0.917s] writing entry points to ../build/openbase2_scripts/openbase2_scripts.egg-info/entry_points.txt
+[0.917s] writing requirements to ../build/openbase2_scripts/openbase2_scripts.egg-info/requires.txt
+[0.918s] writing top-level names to ../build/openbase2_scripts/openbase2_scripts.egg-info/top_level.txt
+[0.918s] writing manifest file '../build/openbase2_scripts/openbase2_scripts.egg-info/SOURCES.txt'
+[0.919s] reading manifest file '../build/openbase2_scripts/openbase2_scripts.egg-info/SOURCES.txt'
+[0.919s] writing manifest file '../build/openbase2_scripts/openbase2_scripts.egg-info/SOURCES.txt'
+[0.919s] running build
+[0.920s] running build_py
+[0.920s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build
+[0.920s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib
+[0.920s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+[0.920s] copying openbase2_scripts/odom_node.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+[0.920s] copying openbase2_scripts/diff_drive.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+[0.920s] copying openbase2_scripts/__init__.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+[0.920s] copying openbase2_scripts/hardware_driver.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts
+[0.920s] running install
+[0.920s] running install_lib
+[0.921s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+[0.921s] copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/odom_node.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+[0.921s] copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/diff_drive.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+[0.921s] copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/__init__.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+[0.921s] copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build/lib/openbase2_scripts/hardware_driver.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts
+[0.921s] byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/odom_node.py to odom_node.cpython-310.pyc
+[0.922s] byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/diff_drive.py to diff_drive.cpython-310.pyc
+[0.922s] byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/__init__.py to __init__.cpython-310.pyc
+[0.922s] byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts/hardware_driver.py to hardware_driver.cpython-310.pyc
+[0.922s] running install_data
+[0.923s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index
+[0.923s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index/resource_index
+[0.923s] creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index/resource_index/packages
+[0.923s] copying resource/openbase2_scripts -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/ament_index/resource_index/packages
+[0.923s] copying package.xml -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/share/openbase2_scripts
+[0.923s] running install_egg_info
+[0.924s] Copying ../build/openbase2_scripts/openbase2_scripts.egg-info to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages/openbase2_scripts-0.0.0-py3.10.egg-info
+[0.924s] running install_scripts
+[0.939s] Installing diff_drive_node script to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/openbase2_scripts
+[0.939s] Installing hardware_driver script to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/openbase2_scripts
+[0.939s] Installing odom_node script to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/openbase2_scripts
+[0.940s] writing list of installed files to '/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/install.log'
+[0.956s] Invoked command in '/home/the-hassan-shahzad/ros2_ws/src/openbase2/openbase2_scripts' returned '0': PYTHONPATH=/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/prefix_override:/home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_scripts/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/openbase2_scripts build --build-base /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/build install --record /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_scripts/install.log --single-version-externally-managed install_data

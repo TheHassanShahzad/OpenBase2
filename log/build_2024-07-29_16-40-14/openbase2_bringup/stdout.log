@@ -1,0 +1,33 @@
+running egg_info
+creating ../build/openbase2_bringup/openbase2_bringup.egg-info
+writing ../build/openbase2_bringup/openbase2_bringup.egg-info/PKG-INFO
+writing dependency_links to ../build/openbase2_bringup/openbase2_bringup.egg-info/dependency_links.txt
+writing entry points to ../build/openbase2_bringup/openbase2_bringup.egg-info/entry_points.txt
+writing requirements to ../build/openbase2_bringup/openbase2_bringup.egg-info/requires.txt
+writing top-level names to ../build/openbase2_bringup/openbase2_bringup.egg-info/top_level.txt
+writing manifest file '../build/openbase2_bringup/openbase2_bringup.egg-info/SOURCES.txt'
+reading manifest file '../build/openbase2_bringup/openbase2_bringup.egg-info/SOURCES.txt'
+writing manifest file '../build/openbase2_bringup/openbase2_bringup.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build/lib
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build/lib/openbase2_bringup
+copying openbase2_bringup/__init__.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build/lib/openbase2_bringup
+running install
+running install_lib
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages/openbase2_bringup
+copying /home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/build/lib/openbase2_bringup/__init__.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages/openbase2_bringup
+byte-compiling /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages/openbase2_bringup/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/ament_index
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/ament_index/resource_index
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/ament_index/resource_index/packages
+copying resource/openbase2_bringup -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/ament_index/resource_index/packages
+copying package.xml -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/openbase2_bringup
+creating /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/openbase2_bringup/launch
+copying launch/bringup.launch.py -> /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/share/openbase2_bringup/launch
+running install_egg_info
+Copying ../build/openbase2_bringup/openbase2_bringup.egg-info to /home/the-hassan-shahzad/ros2_ws/src/openbase2/install/openbase2_bringup/lib/python3.10/site-packages/openbase2_bringup-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/the-hassan-shahzad/ros2_ws/src/openbase2/build/openbase2_bringup/install.log'

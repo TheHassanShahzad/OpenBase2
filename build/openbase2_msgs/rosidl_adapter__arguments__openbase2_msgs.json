@@ -1,0 +1,7 @@
+{
+  "package_name": "openbase2_msgs",
+  "non_idl_tuples": [
+    "/home/the-hassan-shahzad/ros2_ws/src/openbase2/openbase2_msgs:msg/MotorVels.msg",
+    "/home/the-hassan-shahzad/ros2_ws/src/openbase2/openbase2_msgs:msg/EncoderData.msg"
+  ]
+}

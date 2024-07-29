@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from openbase2_msgs/msg/MotorVels.msg
+// generated code does not contain a copyright notice
+
+
+module openbase2_msgs {
+  module msg {
+    struct MotorVels {
+      int16 right_pwm;
+
+      int16 left_pwm;
+    };
+  };
+};
