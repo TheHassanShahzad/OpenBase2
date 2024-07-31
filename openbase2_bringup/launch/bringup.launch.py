@@ -26,14 +26,14 @@ def generate_launch_description():
         ExecuteProcess(
             cmd=['ros2', 'run', 'openbase2_scripts', 'diff_drive_node'],
             output='screen'
-        ),
+        )
         
         # Launch rs_launch.py with specified parameters from realsense2_camera
-        ExecuteProcess(
-            cmd=['ros2', 'launch', 'realsense2_camera', 'rs_launch.py', 
-                 'depth_module.depth_profile:=480x270x6', 
-                 'pointcloud.enable:=true', 
-                 'rgb_camera.color_profile:=640x360x15'],
-            output='screen'
-        ),
+        # ExecuteProcess(
+        #     cmd=['ros2', 'launch', 'realsense2_camera', 'rs_launch.py', 
+        #          'depth_module.depth_profile:=480x270x6', 
+        #          'pointcloud.enable:=true', 
+        #          'rgb_camera.color_profile:=640x360x15'],
+        #     output='screen'
+        # ),
     ])

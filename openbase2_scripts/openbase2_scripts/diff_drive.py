@@ -19,9 +19,9 @@ class DiffDriveNode(Node):
         self.get_logger().info('DiffDriveNode has been started')
         
         # Define robot parameters
-        self.wheel_base = 0.5  # Distance between wheels in meters
-        self.wheel_radius = 0.1  # Radius of the wheel in meters
-        self.max_wheel_vel = 1.0  # Maximum wheel velocity in m/s (example value)
+        self.wheel_base = 0.1  # Distance between wheels in meters
+        self.wheel_radius = 0.0793765  # Radius of the wheel in meters
+        self.max_wheel_vel = 5.934  # Maximum wheel velocity in m/s (example value)
 
     def cmd_vel_callback(self, msg):
         self.get_logger().info(f'Received cmd_vel: linear={msg.linear.x}, angular={msg.angular.z}')
