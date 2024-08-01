@@ -15,6 +15,8 @@ right_encoder_counts = 0
 left_encoder_counts = 0
 right_wheel_pwm = 0
 left_wheel_pwm = 0
+brake_right = False
+brake_left = True
 
 class EncoderNode(Node):
 
@@ -98,11 +100,23 @@ def main(args=None):
                         node.publish_encoder_data()
 
                         # print(f"Sending VR, {right_wheel_pwm}")
-                        response = send_command("VR, " + str(right_wheel_pwm))
-                        if response == "OK":
+                        if right_wheel_pwm == 0:
+                            response = send_command("BR")
+                            brake_right = True
+                        else:
+                            if brake_right == True:
+                                response("UBR")
+                                brake_right = False
+                            response = send_command("VR, " + str(right_wheel_pwm))
+
+                        if left_wheel_pwm == 0:
+                            response = send_command("BL")
+                            brake_left = True
+                        else:
+                            if brake_left == True:
+                                response("UBL")
+                                brake_left = False
                             response = send_command("VL, " + str(left_wheel_pwm))
-                            if response == "OK":
-                                print("Sent wheel PWM values")
 
                     time.sleep(0.01)
             except KeyboardInterrupt:
