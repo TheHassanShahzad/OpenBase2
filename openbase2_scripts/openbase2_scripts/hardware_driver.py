@@ -11,13 +11,6 @@ BAUD_RATE = 115200
 START_BYTE = b'\x02'
 STOP_BYTE = b'\x03'
 
-right_encoder_counts = 0
-left_encoder_counts = 0
-right_wheel_pwm = 0
-left_wheel_pwm = 0
-brake_right = False
-brake_left = True
-
 class EncoderNode(Node):
 
     def __init__(self):
@@ -33,92 +26,60 @@ class EncoderNode(Node):
             10)
         self.get_logger().info('EncoderNode has been started')
 
-    def motor_vels_callback(self, msg):
-        global left_wheel_pwm, right_wheel_pwm
+        self.right_encoder_counts = 0
+        self.left_encoder_counts = 0
+        self.right_wheel_pwm = 0
+        self.left_wheel_pwm = 0
 
-        right_wheel_pwm = msg.right_pwm
-        left_wheel_pwm = msg.left_pwm
-        self.get_logger().info(f'Updated PWM values: right={right_wheel_pwm}, left={left_wheel_pwm}')
+    def motor_vels_callback(self, msg):
+        self.right_wheel_pwm = msg.right_pwm
+        self.left_wheel_pwm = msg.left_pwm
 
     def publish_encoder_data(self):
-        global right_encoder_counts, left_encoder_counts
-        
         encoder_data = EncoderData()
-        encoder_data.right_encoder = int(right_encoder_counts)
-        encoder_data.left_encoder = int(left_encoder_counts)
-        
+        encoder_data.right_encoder = int(self.right_encoder_counts)
+        encoder_data.left_encoder = int(self.left_encoder_counts)
         self.publisher.publish(encoder_data)
-        self.get_logger().info(f'Published encoder data: right={encoder_data.right_encoder}, left={encoder_data.left_encoder}')
-
+        print(f'Published encoder data: right={encoder_data.right_encoder}, left={encoder_data.left_encoder}')
 
 def send_command(command):
     try:
         with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1) as ser:
             ser.flushInput()
             ser.flushOutput()
-            
             full_command = START_BYTE + command.encode() + STOP_BYTE
             ser.write(full_command)
-            
-            response = b''
-            while True:
-                byte = ser.read()
-                if not byte:
-                    break
-                response += byte
-                if byte == STOP_BYTE:
-                    break
-
+            response = ser.read_until(STOP_BYTE)
             if response.startswith(START_BYTE) and response.endswith(STOP_BYTE):
-                response = response[1:-1]
-            
-            return response.decode().strip()
+                return response[1:-1].decode().strip()
     except serial.SerialException as e:
         print(f"Serial communication error: {e}")
-        return None
-
+    return None
 
 def main(args=None):
-    global right_encoder_counts, left_encoder_counts, right_wheel_pwm, left_wheel_pwm
-    
     rclpy.init(args=args)
     node = EncoderNode()
 
-    response = send_command("RR")
-    if response == "OK":
-        response = send_command("RL")
-        if response == "OK":
+    if send_command("RR") == "OK":
+        if send_command("RL") == "OK":
             try:
                 while rclpy.ok():
-                    rclpy.spin_once(node, timeout_sec=0.1)
+                    # Process incoming messages
+                    rclpy.spin_once(node, timeout_sec=0.01)
                     
+                    # Read encoder values
                     right_encoder_counts = send_command("ER")
                     left_encoder_counts = send_command("EL")
                     if right_encoder_counts is not None and left_encoder_counts is not None:
-                        right_encoder_counts = int(right_encoder_counts)
-                        left_encoder_counts = int(left_encoder_counts)
+                        node.right_encoder_counts = int(right_encoder_counts)
+                        node.left_encoder_counts = int(left_encoder_counts)
                         node.publish_encoder_data()
 
-                        # print(f"Sending VR, {right_wheel_pwm}")
-                        if right_wheel_pwm == 0:
-                            response = send_command("BR")
-                            brake_right = True
-                        else:
-                            if brake_right == True:
-                                response("UBR")
-                                brake_right = False
-                            response = send_command("VR, " + str(right_wheel_pwm))
+                        # Send PWM values to motors
+                        send_command(f"VR,{node.right_wheel_pwm}")
+                        send_command(f"VL,{node.left_wheel_pwm}")
+                        print(f"Sent wheel PWM values: right={node.right_wheel_pwm}, left={node.left_wheel_pwm}")
 
-                        if left_wheel_pwm == 0:
-                            response = send_command("BL")
-                            brake_left = True
-                        else:
-                            if brake_left == True:
-                                response("UBL")
-                                brake_left = False
-                            response = send_command("VL, " + str(left_wheel_pwm))
-
-                    time.sleep(0.01)
             except KeyboardInterrupt:
                 print("Shutting down...")
             finally:
@@ -128,7 +89,6 @@ def main(args=None):
             print("Failed to initialize left motor.")
     else:
         print("Failed to initialize right motor.")
-
 
 if __name__ == "__main__":
     main()
